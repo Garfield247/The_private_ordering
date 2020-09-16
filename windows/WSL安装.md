@@ -49,7 +49,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 2.  复制以下命令并运行
 
 ```powershell
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
 
 3.  安装完成后重启电脑
@@ -66,7 +66,7 @@ PS C:\Windows\system32>
 5.  输入命令`wsl --set-version Ubuntu-18.04 2`，这里的Ubuntu-18.04换成你的子系统名称
 
 ```powershell
-C：\WINDOWS\system32> wsl —set-version Ubuntu-18.04 2 
+C：\WINDOWS\system32> wsl —set-version Ubuntu-18.04 2
 Conversion in progress, this may take a few minutes...
 For information on key differences with WSL 2 please visit https://aka.ms/wsl2
 The distribution is already the requested version.
@@ -155,7 +155,7 @@ sudo service xrdp restart
 启动成功后会看到如下提示
 
 ```bash
- * Starting Remote Desktop Protocol server 
+ * Starting Remote Desktop Protocol server
 [20190514-19:06:59] [DEBUG] Testing if xrdp can listen on 0.0.0.0 port 3390.
 [20190514-19:06:59] [DEBUG] Closed socket 6 (AF_INET6 :: port 3390)[ OK ]
 ```
@@ -168,4 +168,4 @@ sudo service xrdp restart
 
 -   [Windows Terminal](https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab)
 
-    
+
