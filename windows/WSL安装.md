@@ -52,9 +52,9 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
 
-3.  安装完成后重启电脑
-
-4.  以管理员身份打开powershell，输入`wsl -l`查看已经安装的子系统。
+3.  安装[wsl2内核更新包](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+4.  安装完成后重启电脑
+5.  以管理员身份打开powershell，输入`wsl -l`查看已经安装的子系统。
 
 ```powershell
 PS C:\Windows\system32> wsl -l
